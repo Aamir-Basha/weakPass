@@ -1,0 +1,16 @@
+public class rechner{
+	public static void main(String[] args) {
+		
+		int ersteZahl = Integer.parseInt(args[0]);
+		int zweiteZahl = Integer.parseInt(args[2]);
+		 
+		String op = args[1];
+		
+		if(op.equals("*")) {
+			System.out.println("antwort lautet: " + (ersteZahl * zweiteZahl));
+			
+		}else {
+			System.out.println("Errooorrrroroor"	);
+		}
+	}
+}
