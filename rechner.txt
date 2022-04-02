@@ -6,11 +6,11 @@ public class rechner{
 		 
 		String op = args[1];
 		
-		if(op.equals("*")) {
+		if(op.equals("!")) {
 			System.out.println("antwort lautet: " + (ersteZahl * zweiteZahl));
 			
 		}else {
-			System.out.println("Errooorrrroroor"	);
+			System.out.println("für Multikation ! benutzen");
 		}
 	}
 }
