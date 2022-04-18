@@ -1,0 +1,35 @@
+import java.util.*;
+import java.util.Scanner;
+public class A3F {
+
+	public static void main(String args[]) {
+		
+		int ersteZahl;
+		int zweiteZahl;
+		String OP;
+		
+		
+		   Scanner input = new Scanner(System.in);
+		   
+		
+		   System.out.println("ersteZahl");
+		   ersteZahl = input.nextInt();
+		  
+		   System.out.println("zweiteZahl");
+		   zweiteZahl = input.nextInt();
+		   		  
+		   System.out.println(" + oder - ");
+		   OP = input.next();
+		   
+		   if (OP.equals("+"))
+		    {
+		        System.out.println( ersteZahl+zweiteZahl);
+		    }
+		    else 
+		    {
+		    	System.out.println(ersteZahl-zweiteZahl);
+		    }
+    }
+			   
+	}
+

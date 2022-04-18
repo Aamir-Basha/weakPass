@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+ public class  CR {
+	
+	public  static void main(String[] args) { 
+		
+        	 int numToGuess = 0;	                                    		 // if there's input then go to ComputerRaten
+			
+				if (args.length != 0) {	                      		    	
+					 numToGuess = Integer.parseInt(args[0]);
+					 computerRaten(numToGuess);
+				}
+				if (args.length == 0) {                                  // if there's no input then go to SelberRaten
+					  SelberRaten();		  
+			    }		    
+	}
+	  
+
+	public static void computerRaten(int numToGuess) {                    // I  have to write my game here .. will do it later
+     
+			int  rn;
+			rn = (int) (Math.random() *99 + 1);                          // Random Number Generater Between 1 -100
+			int ver = 0;                                                 // Computer Versuche Zeahler 
+	    
+				do {
+					ver++;
+					
+					if (rn != numToGuess) {
+						rn = (int) (Math.random() *100 + 1);
+					}
+					
+				    if (rn == numToGuess) {
+					System.out.println("  It took the PC ("+ ver + ") times to guess the number");
+					}
+				   
+				}
+				while (rn != numToGuess);
+	}
+	  
+    public static void SelberRaten() {                             // this is your Method..
+		
+			
+		   int  randomNum =1 +(int) (100* Math.random());          // random number 
+		   boolean result = false; 
+		         System.out.println(" Guess a number between 1 and 100"); 
+				 
+				while (!result) {                                 // if not coorect then try again till it's right
+					Scanner sc = new Scanner(System.in); 
+					double nextNumber = sc.nextInt();     
+					
+				if (randomNum == nextNumber) {
+					System.out.println(  "Congratulations!"  + " You guessed the number.");
+				    result = true;       
+				}
+				
+				else if (randomNum > nextNumber) {	     
+				   System.out.println("The number is "+ "greater than " + nextNumber);
+				   result = false;
+				}
+				
+				else if (randomNum < nextNumber) {
+					System.out.println("The number is"+ " less than " + nextNumber);
+					result = false;
+					
+				
+				
+				}
+	   }
+	}
+ }
+  
+ 
+	
