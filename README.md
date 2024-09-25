@@ -76,10 +76,3 @@ abcdef1234
 Your Password is valid: abcdef1234
 ```
 
-## License
-
-This project is licensed under the MIT License.
-
-## Contributions
-
-Feel free to submit pull requests or report issues. All contributions are welcome!
